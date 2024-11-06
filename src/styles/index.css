@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.roll-in-icon {
+  width: 12rem;
+  height: 12rem;
+  position: relative;
+  animation: rollInFromLeft 2s ease-out forwards;
+}
+
+@keyframes rollInFromLeft {
+  0% {
+    transform: translateX(-100vw) rotate(-720deg);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
